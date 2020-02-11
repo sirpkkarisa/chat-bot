@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Clienct</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><h1>Chat App</h1></div>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="form">
+                <input type="text" placeholder="Username" id="username"><br>
+                <input type="password" placeholder="Password" id="password"><br>
+                <button type="submit" id="login">Login</button>
+            </form>
+        </div>
+        <div class="chat-container" hidden>
+            <div id="status" class="status"></div>
+            <div id="chats" class="chats">
+            </div>
+               <div class="inputDiv">
+                <textarea type="text" placeholder="Type message..." class="input" id="input"></textarea>
+               </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
